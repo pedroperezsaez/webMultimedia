@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 body{
     margin: 0;
     padding: 0;
@@ -63,19 +66,44 @@ menu{
 }
 
 .portada{
+    display: grid;
     margin-left: 100px;
     margin-right: 100px;
     margin-top: 100px;
     height: 600px;
-    background-color: aqua;
+   
     width: calc(100% - 200px);
-    grid-template-areas: "titulo imagen",
+    grid-template-areas: "titulo imagen"
                 "subtitulo imagen";
+                align-items: center;
+                 grid-template-columns: 35% 65%;
+                 color: white;
+                justify-content: center;
+                align-items: center;
+             
 }
 .titulo{
+     
+     background-color: blue;
    grid-area: titulo;
-   font-size: 50px;
+    font-size: 50px;
+  
+font-family: 'Montserrat';
+font-weight: bolder;
+
 }
 .subtitulo{
+   font-size: 30px;
     grid-area: subtitulo;
+    height: 100%;
+    font-family: 'Montserrat';
+font-weight: bolder;
+margin-left: 20px;
+}
+.imagen{
+    grid-area: imagen;
+    background-color: blueviolet;
+   min-height: 100%;
+   width: 100%;
+   object-fit: cover;
 }
