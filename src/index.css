@@ -76,7 +76,7 @@ menu{
     grid-template-areas: "contenedor-titulo imagen"
                 "contenedor-titulo imagen";
               
-                 grid-template-columns: 35% 65%;
+                 grid-template-columns: minmax(0 ,35%) minmax(0 ,65%);
                  color: white;
                  gap: 30px;
                  padding-bottom: 100px;
@@ -125,7 +125,7 @@ font-weight:normal;
 }
 .imagen{
     grid-area: imagen;
-    background-color: blueviolet;
+   
    height: 600px;
    width: 100%;
    object-fit: cover;
@@ -177,16 +177,19 @@ align-items: center;
     margin-left: 100px;
     margin-right: 100px;
    margin-bottom: 50px;
-    justify-content: space-between;
+    justify-content: center;
     display: grid;
-    grid-template-columns: repeat(4, 370px); 
+    grid-template-columns: repeat(4, minmax(0,370px)); 
     border-bottom: 2px solid white;
+    padding-bottom: 30px;
 
 }
-
+.contenedor-textoimagenes{
+    border: 2px solid white;
+}
 .imagen-novedades{
     width: 100%;
-    border: 2px solid white;
+   object-fit: cover;
     background-color: brown;
     filter: grayscale(100%);
 }
@@ -207,12 +210,63 @@ align-items: center;
     flex-direction: column;
     justify-content: space-around;
     color: white;
-    border-left: 2px solid white;
-    border-right: 2px solid white;
-    border-bottom: 2px solid white;
+   border-top: 2px solid white;
     padding-top: 20px;
     
 }
 .margen{
     margin-top: 50px;
+}
+
+@media(max-width:1253px){
+  .portada{
+  grid-template-areas: 
+            "imagen"
+            "contenedor-titulo"; 
+        grid-template-columns: 100%; 
+        
+        height: auto; 
+        margin-top: 50px;
+}  
+main{
+    display: grid;
+    grid-template-areas: "portada"
+    "novedades";
+}
+
+.contenedor2{
+    grid-area: novedades;
+}
+.contenedor-imagenes{
+ 
+  
+    grid-template-columns: repeat(3, minmax(0,370px)); 
+   
+
+}
+
+}
+@media(max-width:890px){
+    .contenedor-imagenes{
+ 
+  
+    grid-template-columns: repeat(2, minmax(0,370px)); 
+   
+
+}
+}
+
+@media(max-width:722px){
+    .contenedor-novedades{
+        
+    gap: 10px;
+    grid-template-areas: "novedades" 
+    "boton";}
+       .contenedor-imagenes{
+ 
+  
+    grid-template-columns: repeat(1, minmax(0,370px)); 
+   
+
+}
 }
