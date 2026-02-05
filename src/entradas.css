@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap');
+
 .contenedor-video{
     display: grid;
     grid-template-columns: minmax(0, 890px);
@@ -18,6 +20,11 @@
    
   
 }
+video {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+}
 
 .texto-video{
     display: grid;
@@ -30,8 +37,15 @@ width: 100%;
    color: white
    
 }
+.titulo-video{
+    font-family: "Libre Bodoni";
+    font-weight: bold;
+}
 
 .titulo-video,
 .subtitulo-video {
     margin-left: 50px;
+    margin-right: 50px;
 }
+
+
