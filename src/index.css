@@ -142,7 +142,9 @@ font-weight:normal;
    width: 100%;
    object-fit: cover;
 }
-
+.link-novedades{
+    text-decoration: none;
+}
 .contenedor-novedades{
     display: grid;
     grid-template-areas: "novedades boton";
@@ -210,6 +212,7 @@ align-items: center;
     background-color: white;
     color: black;
     transition: 0.5s;
+    
 }
 .texto-novedades{    
     width: calc(100% - 20px);
