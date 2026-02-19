@@ -48,26 +48,24 @@ width: 100%;
     margin-right: 50px;
 }
 
-
-.no-elegido-video {
-   display: none; 
-}
-#label-ad{
-    margin-bottom:25px;
-}
-label {
-    color: #888;
-    
-    margin-right: 20px;
-    font-family: "Libre Bodoni";
-    transition: 0.3s;
-    
+.boton-descarga{
+    text-align: center;
+   width: 200px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    font-weight: 600;
+      text-decoration: none;
+      color: white;
+      padding: 12px 30px;
+      border: 2px solid white;
 }
 
 
-label.activa {
-    color: white; 
-    font-weight: bold;
-    text-decoration: underline; 
-    
+
+.boton-descarga:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
 }
+
+
