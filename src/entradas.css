@@ -49,3 +49,25 @@ width: 100%;
 }
 
 
+.no-elegido-video {
+   display: none; 
+}
+#label-ad{
+    margin-bottom:25px;
+}
+label {
+    color: #888;
+    
+    margin-right: 20px;
+    font-family: "Libre Bodoni";
+    transition: 0.3s;
+    
+}
+
+
+label.activa {
+    color: white; 
+    font-weight: bold;
+    text-decoration: underline; 
+    
+}

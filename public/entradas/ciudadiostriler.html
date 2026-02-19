@@ -16,18 +16,29 @@
     <a href="/soundtracks.html" class="no-elegido">SOUNDTRACKS</a>
     </menu>
 
-    <div class="contenedor-video">
-        <div class="video">
-            <video height="315" controls poster="/src/imgs/DIOOOrecortada.jpg">
-    <source src="/public/vid/Ciudad de Dios - Fernando Meirelles, Kátia Lund  ｜  Teaser Tráiler (2002) - Daniel Zorro [MPAYnwzZKKw].mp4" type="video/mp4">
-   
-</video>
-           
-        </div>
-        <div class="texto-video">
-            <span class="titulo-video titulo">Ciudad de dios </span>
-            <span class="subtitulo-video subtitulo">Basada en hechos reales, describe el mundo del crimen organizado en Cidade de Deus, un suburbio de Río de Janeiro, desde finales de los sesenta hasta principios de los ochenta,   </span>
-        </div>
+   <div class="contenedor-video">
+  <label id="label-normal" class="activa"> 
+    <input type="radio" id="radio-normal" name="version" checked> Vídeo normal 
+</label>
+<label id="label-ad"> 
+    <input type="radio" id="radio-ad" name="version"> Con audiodescripción 
+</label>
+
+    <div class="video">
+        <video class="normal" height="315" controls poster="/src/imgs/DIOOOrecortada.jpg">
+            <source src="/public/vid/Ciudad de Dios - Fernando Meirelles, Kátia Lund  ｜  Teaser Tráiler (2002) - Daniel Zorro [MPAYnwzZKKw].mp4" type="video/mp4">
+        </video>
+        
+        <video class="ad no-elegido-video" height="315" controls poster="/src/imgs/DIOOOrecortada.jpg">
+            <source src="/public/vid/Ciudad de Dios - Fernando Meirelles, Kátia Lund  ｜  Teaser Tráiler (2002) - Daniel Zorro [MPAYnwzZKKw].mp4" type="video/mp4">
+        </video>
     </div>
+
+    <div class="texto-video">
+        <span class="titulo-video titulo">Ciudad de dios </span>
+        <span class="subtitulo-video subtitulo">Basada en hechos reales, describe el mundo del crimen organizado en Cidade de Deus, un suburbio de Río de Janeiro, desde finales de los sesenta hasta principios de los ochenta, </span>
+    </div>
+</div>
+<script src="/src/entradas.js"></script>
 </body>
 </html>
